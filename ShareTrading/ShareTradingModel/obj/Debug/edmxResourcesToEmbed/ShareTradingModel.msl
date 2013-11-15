@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ShareTradingModelStoreContainer" CdmEntityContainer="ShareTradingEntities">
+    <EntitySetMapping Name="Accounts">
+      <EntityTypeMapping TypeName="IsTypeOf(ShareTradingModel.Account)">
+        <MappingFragment StoreEntitySet="Accounts">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="SpecialQuestion" ColumnName="SpecialQuestion" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="UserName" ColumnName="UserName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(ShareTradingModel.User)">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PersonalDetailId" ColumnName="PersonalDetailId" />
+          <ScalarProperty Name="Points" ColumnName="Points" />
+        </MappingFragment>
+      </EntityTypeMapping>
+      <EntityTypeMapping TypeName="IsTypeOf(ShareTradingModel.Company)">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="PersonalDetailId" ColumnName="PersonalDetailId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Addresses">
+      <EntityTypeMapping TypeName="ShareTradingModel.Address">
+        <MappingFragment StoreEntitySet="Addresses">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="HouseNumber" ColumnName="HouseNumber" />
+          <ScalarProperty Name="StreetNumber" ColumnName="StreetNumber" />
+          <ScalarProperty Name="City" ColumnName="City" />
+          <ScalarProperty Name="Country" ColumnName="Country" />
+          <ScalarProperty Name="Fax" ColumnName="Fax" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PersonalDetails">
+      <EntityTypeMapping TypeName="ShareTradingModel.PersonalDetail">
+        <MappingFragment StoreEntitySet="PersonalDetails">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Address1ID" ColumnName="Address1" />
+          <ScalarProperty Name="Address2ID" ColumnName="Address2" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Portfolios">
+      <EntityTypeMapping TypeName="ShareTradingModel.Portfolio">
+        <MappingFragment StoreEntitySet="Portfolios">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ShareId" ColumnName="ShareId" />
+          <ScalarProperty Name="DateBought" ColumnName="DateBought" />
+          <ScalarProperty Name="AveragePrice" ColumnName="AveragePrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Shares">
+      <EntityTypeMapping TypeName="ShareTradingModel.Share">
+        <MappingFragment StoreEntitySet="Shares">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="CompanyId" ColumnName="CompanyId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="StockExchangeId" ColumnName="StockExchangeId" />
+          <ScalarProperty Name="FaceValue" ColumnName="FaceValue" />
+          <ScalarProperty Name="QuantityInitial" ColumnName="QuantityInitial" />
+          <ScalarProperty Name="QuantityRemaining" ColumnName="QuantityRemaining" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TransactionHistories">
+      <EntityTypeMapping TypeName="ShareTradingModel.TransactionHistory">
+        <MappingFragment StoreEntitySet="TransactionHistories">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ShareId" ColumnName="ShareId" />
+          <ScalarProperty Name="Mode" ColumnName="Mode" />
+          <ScalarProperty Name="NumberOfShares" ColumnName="NumberOfShares" />
+          <ScalarProperty Name="PricePerShare" ColumnName="PricePerShare" />
+          <ScalarProperty Name="ProfitPerShare" ColumnName="ProfitPerShare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
