@@ -1,4 +1,4 @@
-@model IEnumerable<Entities.PersonalDetail>
+@model IEnumerable<ShareTradingModel.PersonalDetail>
 
 @{
     ViewBag.Title = "Index";
@@ -22,12 +22,6 @@
             Address2
         </th>
         <th>
-            Address
-        </th>
-        <th>
-            Address3
-        </th>
-        <th>
             Companies
         </th>
         <th>
@@ -44,12 +38,6 @@
         </td>
         <td>
 			@item.Name
-        </td>
-        <td>
-			@item.Address1
-        </td>
-        <td>
-			@item.Address2
         </td>
         <td>
 			@Html.DisplayTextFor(_ => item.Address1).ToString()

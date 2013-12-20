@@ -1,0 +1,38 @@
+@model Entities.Address
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Address</legend>
+
+    <div class="display-label">HouseNumber</div>
+    <div class="display-field">@Model.HouseNumber</div>
+
+    <div class="display-label">StreetNumber</div>
+    <div class="display-field">@Model.StreetNumber</div>
+
+    <div class="display-label">City</div>
+    <div class="display-field">@Model.City</div>
+
+    <div class="display-label">Country</div>
+    <div class="display-field">@Model.Country</div>
+
+    <div class="display-label">Fax</div>
+    <div class="display-field">@Model.Fax</div>
+
+    <div class="display-label">PhoneNumber</div>
+    <div class="display-field">@Model.PhoneNumber</div>
+</fieldset>
+@using (Html.BeginForm()) {
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}
+
+

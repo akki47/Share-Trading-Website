@@ -18,3 +18,23 @@ C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTrading
 C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingModel\obj\Debug\ShareTradingModel.csprojResolveAssemblyReference.cache
 C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingModel\obj\Debug\ShareTradingModel.dll
 C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingModel\obj\Debug\ShareTradingModel.pdb
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\bin\Debug\ShareTradingModel.dll.config
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\bin\Debug\ShareTradingModel.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\bin\Debug\ShareTradingModel.pdb
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\bin\Debug\Entities.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\bin\Debug\EntityFramework.SqlServer.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\bin\Debug\Entities.pdb
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\bin\Debug\EntityFramework.SqlServer.xml
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\obj\Debug\ShareTradingModel.csprojResolveAssemblyReference.cache
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\obj\Debug\ShareTradingModel.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\obj\Debug\ShareTradingModel.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\bin\Debug\ShareTradingModel.dll.config
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\bin\Debug\ShareTradingModel.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\bin\Debug\ShareTradingModel.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\bin\Debug\Entities.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\bin\Debug\Entities.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\obj\Debug\ShareTradingModel.csprojResolveAssemblyReference.cache
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\obj\Debug\ShareTradingModel.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingModel\obj\Debug\ShareTradingModel.pdb

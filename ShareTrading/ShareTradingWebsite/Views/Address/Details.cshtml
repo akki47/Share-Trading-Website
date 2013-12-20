@@ -1,0 +1,35 @@
+@model ShareTradingModel.Address
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Address</legend>
+
+    <div class="display-label">HouseNumber</div>
+    <div class="display-field">@Model.HouseNumber</div>
+
+    <div class="display-label">StreetNumber</div>
+    <div class="display-field">@Model.StreetNumber</div>
+
+    <div class="display-label">City</div>
+    <div class="display-field">@Model.City</div>
+
+    <div class="display-label">Country</div>
+    <div class="display-field">@Model.Country</div>
+
+    <div class="display-label">Fax</div>
+    <div class="display-field">@Model.Fax</div>
+
+    <div class="display-label">PhoneNumber</div>
+    <div class="display-field">@Model.PhoneNumber</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

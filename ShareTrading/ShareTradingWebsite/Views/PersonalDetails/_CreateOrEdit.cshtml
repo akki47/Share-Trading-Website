@@ -1,4 +1,4 @@
-@model Entities.PersonalDetail
+@model ShareTradingModel.PersonalDetail
 
 @* This partial view defines form fields that will appear when creating and editing entities *@
 
@@ -11,18 +11,26 @@
 </div>
 
 <div class="editor-label">
-    @Html.LabelFor(model => model.Address1)
+    Address1
 </div>
 <div class="editor-field">
     @Html.EditorFor(model => model.Address1)
-    @Html.ValidationMessageFor(model => model.Address1)
+    @*@Html.DropDownListFor(model => model.Address1ID, ((IEnumerable<ShareTradingModel.Address>)ViewBag.PossibleAddress1).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.Id.ToString(),
+        Selected = (Model != null) && (option.Id == Model.Address1ID)
+    }), "Choose...")*@
+    @*@Html.ValidationMessageFor(model => model.Address1ID)*@
 </div>
-
 <div class="editor-label">
-    @Html.LabelFor(model => model.Address2)
+    Address2
 </div>
 <div class="editor-field">
     @Html.EditorFor(model => model.Address2)
-    @Html.ValidationMessageFor(model => model.Address2)
+    @*@Html.DropDownListFor(model => model.Address2ID, ((IEnumerable<ShareTradingModel.Address>)ViewBag.PossibleAddress2).Select(option => new SelectListItem {
+        Text = Html.DisplayTextFor(_ => option).ToString(), 
+        Value = option.Id.ToString(),
+        Selected = (Model != null) && (option.Id == Model.Address2ID)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.Address2ID)*@
 </div>
-

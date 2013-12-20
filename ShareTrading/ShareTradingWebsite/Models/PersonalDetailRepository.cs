@@ -5,7 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Web;
-using Entities;
+//using Entities;
 using ShareTradingModel;
 
 namespace ShareTradingWebsite.Models

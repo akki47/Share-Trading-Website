@@ -1,0 +1,14 @@
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Frameworks\bin\Debug\Frameworks.dll.config
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Frameworks\bin\Debug\Frameworks.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Frameworks\bin\Debug\Frameworks.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Frameworks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Frameworks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Frameworks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Frameworks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Frameworks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Common.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Frameworks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Frameworks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.Logging.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Frameworks\bin\Debug\Microsoft.Practices.EnterpriseLibrary.Logging.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Frameworks\obj\Debug\Frameworks.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Frameworks\obj\Debug\Frameworks.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Frameworks\obj\Debug\Frameworks.csprojResolveAssemblyReference.cache

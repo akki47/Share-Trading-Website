@@ -1,0 +1,71 @@
+@model IEnumerable<Entities.PersonalDetail>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            Name
+        </th>
+        <th>
+            Address1
+        </th>
+        <th>
+            Address2
+        </th>
+        <th>
+            Address
+        </th>
+        <th>
+            Address3
+        </th>
+        <th>
+            Companies
+        </th>
+        <th>
+            Users
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+        <td>
+			@item.Name
+        </td>
+        <td>
+			@item.Address1
+        </td>
+        <td>
+			@item.Address2
+        </td>
+        <td>
+			@Html.DisplayTextFor(_ => item.Address1).ToString()
+        </td>
+        <td>
+			@Html.DisplayTextFor(_ => item.Address2).ToString()
+        </td>
+        <td>
+			@(item.Companies == null ? "None" : item.Companies.Count.ToString())
+        </td>
+        <td>
+			@(item.Users == null ? "None" : item.Users.Count.ToString())
+        </td>
+    </tr>
+}
+
+</table>
+
+

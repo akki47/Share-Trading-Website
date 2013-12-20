@@ -1,0 +1,273 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ShareTradingModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2005" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="ShareTradingModelStoreContainer">
+    <EntitySet Name="Accounts" EntityType="ShareTradingModel.Store.Accounts" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Addresses" EntityType="ShareTradingModel.Store.Addresses" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Company" EntityType="ShareTradingModel.Store.Company" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="PersonalDetails" EntityType="ShareTradingModel.Store.PersonalDetails" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Portfolios" EntityType="ShareTradingModel.Store.Portfolios" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="Shares" EntityType="ShareTradingModel.Store.Shares" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="TransactionHistories" EntityType="ShareTradingModel.Store.TransactionHistories" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="User" EntityType="ShareTradingModel.Store.User" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_Company_inherits_Account" Association="ShareTradingModel.Store.FK_Company_inherits_Account">
+      <End Role="Accounts" EntitySet="Accounts" />
+      <End Role="Company" EntitySet="Company" />
+    </AssociationSet>
+    <AssociationSet Name="FK_CompanyPersonalDetail" Association="ShareTradingModel.Store.FK_CompanyPersonalDetail">
+      <End Role="PersonalDetails" EntitySet="PersonalDetails" />
+      <End Role="Company" EntitySet="Company" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PersonalDetailAddress" Association="ShareTradingModel.Store.FK_PersonalDetailAddress">
+      <End Role="Addresses" EntitySet="Addresses" />
+      <End Role="PersonalDetails" EntitySet="PersonalDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PersonalDetailAddress1" Association="ShareTradingModel.Store.FK_PersonalDetailAddress1">
+      <End Role="Addresses" EntitySet="Addresses" />
+      <End Role="PersonalDetails" EntitySet="PersonalDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PortfolioShare" Association="ShareTradingModel.Store.FK_PortfolioShare">
+      <End Role="Shares" EntitySet="Shares" />
+      <End Role="Portfolios" EntitySet="Portfolios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PortfolioUser" Association="ShareTradingModel.Store.FK_PortfolioUser">
+      <End Role="User" EntitySet="User" />
+      <End Role="Portfolios" EntitySet="Portfolios" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ShareCompany" Association="ShareTradingModel.Store.FK_ShareCompany">
+      <End Role="Company" EntitySet="Company" />
+      <End Role="Shares" EntitySet="Shares" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TransactionHistoryShare" Association="ShareTradingModel.Store.FK_TransactionHistoryShare">
+      <End Role="Shares" EntitySet="Shares" />
+      <End Role="TransactionHistories" EntitySet="TransactionHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_TransactionHistoryUser" Association="ShareTradingModel.Store.FK_TransactionHistoryUser">
+      <End Role="User" EntitySet="User" />
+      <End Role="TransactionHistories" EntitySet="TransactionHistories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_inherits_Account" Association="ShareTradingModel.Store.FK_User_inherits_Account">
+      <End Role="Accounts" EntitySet="Accounts" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserPersonalDetail" Association="ShareTradingModel.Store.FK_UserPersonalDetail">
+      <End Role="PersonalDetails" EntitySet="PersonalDetails" />
+      <End Role="User" EntitySet="User" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Accounts">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="SpecialQuestion" Type="nvarchar" MaxLength="100" />
+    <Property Name="Answer" Type="nvarchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Addresses">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="HouseNumber" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="StreetNumber" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="City" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Country" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="Fax" Type="nvarchar" MaxLength="20" />
+    <Property Name="PhoneNumber" Type="nvarchar" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="Company">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="PersonalDetailId" Type="bigint" Nullable="false" />
+    <Property Name="Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PersonalDetails">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Address1" Type="bigint" Nullable="false" />
+    <Property Name="Address2" Type="bigint" />
+  </EntityType>
+  <EntityType Name="Portfolios">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="bigint" Nullable="false" />
+    <Property Name="ShareId" Type="bigint" Nullable="false" />
+    <Property Name="DateBought" Type="datetime" Nullable="false" />
+    <Property Name="AveragePrice" Type="decimal" Nullable="false" Scale="2" />
+  </EntityType>
+  <EntityType Name="Shares">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="CompanyId" Type="bigint" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="StockExchangeId" Type="bigint" />
+    <Property Name="FaceValue" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="QuantityInitial" Type="bigint" Nullable="false" />
+    <Property Name="QuantityRemaining" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TransactionHistories">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="bigint" Nullable="false" />
+    <Property Name="ShareId" Type="bigint" Nullable="false" />
+    <Property Name="Mode" Type="int" Nullable="false" />
+    <Property Name="NumberOfShares" Type="bigint" Nullable="false" />
+    <Property Name="PricePerShare" Type="decimal" Nullable="false" Scale="2" />
+    <Property Name="ProfitPerShare" Type="decimal" Nullable="false" Scale="2" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Points" Type="bigint" Nullable="false" />
+    <Property Name="PersonalDetailId" Type="bigint" Nullable="false" />
+    <Property Name="Id" Type="bigint" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_Company_inherits_Account">
+    <End Role="Accounts" Type="ShareTradingModel.Store.Accounts" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="Company" Type="ShareTradingModel.Store.Company" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_CompanyPersonalDetail">
+    <End Role="PersonalDetails" Type="ShareTradingModel.Store.PersonalDetails" Multiplicity="1" />
+    <End Role="Company" Type="ShareTradingModel.Store.Company" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonalDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Company">
+        <PropertyRef Name="PersonalDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PersonalDetailAddress">
+    <End Role="Addresses" Type="ShareTradingModel.Store.Addresses" Multiplicity="1" />
+    <End Role="PersonalDetails" Type="ShareTradingModel.Store.PersonalDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Addresses">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PersonalDetails">
+        <PropertyRef Name="Address1" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PersonalDetailAddress1">
+    <End Role="Addresses" Type="ShareTradingModel.Store.Addresses" Multiplicity="0..1" />
+    <End Role="PersonalDetails" Type="ShareTradingModel.Store.PersonalDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Addresses">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="PersonalDetails">
+        <PropertyRef Name="Address2" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PortfolioShare">
+    <End Role="Shares" Type="ShareTradingModel.Store.Shares" Multiplicity="1" />
+    <End Role="Portfolios" Type="ShareTradingModel.Store.Portfolios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shares">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Portfolios">
+        <PropertyRef Name="ShareId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PortfolioUser">
+    <End Role="User" Type="ShareTradingModel.Store.User" Multiplicity="1" />
+    <End Role="Portfolios" Type="ShareTradingModel.Store.Portfolios" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Portfolios">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ShareCompany">
+    <End Role="Company" Type="ShareTradingModel.Store.Company" Multiplicity="1" />
+    <End Role="Shares" Type="ShareTradingModel.Store.Shares" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Company">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="Shares">
+        <PropertyRef Name="CompanyId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TransactionHistoryShare">
+    <End Role="Shares" Type="ShareTradingModel.Store.Shares" Multiplicity="1" />
+    <End Role="TransactionHistories" Type="ShareTradingModel.Store.TransactionHistories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Shares">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TransactionHistories">
+        <PropertyRef Name="ShareId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_TransactionHistoryUser">
+    <End Role="User" Type="ShareTradingModel.Store.User" Multiplicity="1" />
+    <End Role="TransactionHistories" Type="ShareTradingModel.Store.TransactionHistories" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="TransactionHistories">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_inherits_Account">
+    <End Role="Accounts" Type="ShareTradingModel.Store.Accounts" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="User" Type="ShareTradingModel.Store.User" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="Accounts">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserPersonalDetail">
+    <End Role="PersonalDetails" Type="ShareTradingModel.Store.PersonalDetails" Multiplicity="1" />
+    <End Role="User" Type="ShareTradingModel.Store.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PersonalDetails">
+        <PropertyRef Name="Id" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="PersonalDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

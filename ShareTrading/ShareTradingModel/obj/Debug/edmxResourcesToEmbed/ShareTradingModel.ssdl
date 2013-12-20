@@ -9,7 +9,7 @@
     <EntitySet Name="Shares" EntityType="ShareTradingModel.Store.Shares" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="TransactionHistories" EntityType="ShareTradingModel.Store.TransactionHistories" store:Type="Tables" Schema="dbo" />
     <EntitySet Name="User" EntityType="ShareTradingModel.Store.User" store:Type="Tables" Schema="dbo" />
-    <AssociationSet Name="FK_Company_inherits_Account" Association="ShareTradingModel.Store.FK_Company_inherits_Account">
+    <AssociationSet Name="FK_Company_Accounts" Association="ShareTradingModel.Store.FK_Company_Accounts">
       <End Role="Accounts" EntitySet="Accounts" />
       <End Role="Company" EntitySet="Company" />
     </AssociationSet>
@@ -17,11 +17,11 @@
       <End Role="PersonalDetails" EntitySet="PersonalDetails" />
       <End Role="Company" EntitySet="Company" />
     </AssociationSet>
-    <AssociationSet Name="FK_PersonalDetailAddress" Association="ShareTradingModel.Store.FK_PersonalDetailAddress">
+    <AssociationSet Name="FK_PersonalDetail_Address1" Association="ShareTradingModel.Store.FK_PersonalDetail_Address1">
       <End Role="Addresses" EntitySet="Addresses" />
       <End Role="PersonalDetails" EntitySet="PersonalDetails" />
     </AssociationSet>
-    <AssociationSet Name="FK_PersonalDetailAddress1" Association="ShareTradingModel.Store.FK_PersonalDetailAddress1">
+    <AssociationSet Name="FK_PersonalDetail_Address2" Association="ShareTradingModel.Store.FK_PersonalDetail_Address2">
       <End Role="Addresses" EntitySet="Addresses" />
       <End Role="PersonalDetails" EntitySet="PersonalDetails" />
     </AssociationSet>
@@ -45,7 +45,7 @@
       <End Role="User" EntitySet="User" />
       <End Role="TransactionHistories" EntitySet="TransactionHistories" />
     </AssociationSet>
-    <AssociationSet Name="FK_User_inherits_Account" Association="ShareTradingModel.Store.FK_User_inherits_Account">
+    <AssociationSet Name="FK_User_Accounts" Association="ShareTradingModel.Store.FK_User_Accounts">
       <End Role="Accounts" EntitySet="Accounts" />
       <End Role="User" EntitySet="User" />
     </AssociationSet>
@@ -60,9 +60,9 @@
     </Key>
     <Property Name="Id" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
     <Property Name="UserName" Type="nvarchar" Nullable="false" MaxLength="50" />
-    <Property Name="Password" Type="nvarchar" Nullable="false" MaxLength="50" />
     <Property Name="SpecialQuestion" Type="nvarchar" MaxLength="100" />
     <Property Name="Answer" Type="nvarchar" MaxLength="50" />
+    <Property Name="Role" Type="int" Nullable="false" />
   </EntityType>
   <EntityType Name="Addresses">
     <Key>
@@ -82,6 +82,7 @@
     </Key>
     <Property Name="PersonalDetailId" Type="bigint" Nullable="false" />
     <Property Name="Id" Type="bigint" Nullable="false" />
+    <Property Name="AccountId" Type="bigint" Nullable="false" />
   </EntityType>
   <EntityType Name="PersonalDetails">
     <Key>
@@ -133,18 +134,17 @@
     <Property Name="Points" Type="bigint" Nullable="false" />
     <Property Name="PersonalDetailId" Type="bigint" Nullable="false" />
     <Property Name="Id" Type="bigint" Nullable="false" />
+    <Property Name="AccountId" Type="bigint" Nullable="false" />
   </EntityType>
-  <Association Name="FK_Company_inherits_Account">
-    <End Role="Accounts" Type="ShareTradingModel.Store.Accounts" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="Company" Type="ShareTradingModel.Store.Company" Multiplicity="0..1" />
+  <Association Name="FK_Company_Accounts">
+    <End Role="Accounts" Type="ShareTradingModel.Store.Accounts" Multiplicity="1" />
+    <End Role="Company" Type="ShareTradingModel.Store.Company" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Accounts">
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="Company">
-        <PropertyRef Name="Id" />
+        <PropertyRef Name="AccountId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -160,7 +160,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_PersonalDetailAddress">
+  <Association Name="FK_PersonalDetail_Address1">
     <End Role="Addresses" Type="ShareTradingModel.Store.Addresses" Multiplicity="1" />
     <End Role="PersonalDetails" Type="ShareTradingModel.Store.PersonalDetails" Multiplicity="*" />
     <ReferentialConstraint>
@@ -172,7 +172,7 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_PersonalDetailAddress1">
+  <Association Name="FK_PersonalDetail_Address2">
     <End Role="Addresses" Type="ShareTradingModel.Store.Addresses" Multiplicity="0..1" />
     <End Role="PersonalDetails" Type="ShareTradingModel.Store.PersonalDetails" Multiplicity="*" />
     <ReferentialConstraint>
@@ -244,17 +244,15 @@
       </Dependent>
     </ReferentialConstraint>
   </Association>
-  <Association Name="FK_User_inherits_Account">
-    <End Role="Accounts" Type="ShareTradingModel.Store.Accounts" Multiplicity="1">
-      <OnDelete Action="Cascade" />
-    </End>
-    <End Role="User" Type="ShareTradingModel.Store.User" Multiplicity="0..1" />
+  <Association Name="FK_User_Accounts">
+    <End Role="Accounts" Type="ShareTradingModel.Store.Accounts" Multiplicity="1" />
+    <End Role="User" Type="ShareTradingModel.Store.User" Multiplicity="*" />
     <ReferentialConstraint>
       <Principal Role="Accounts">
         <PropertyRef Name="Id" />
       </Principal>
       <Dependent Role="User">
-        <PropertyRef Name="Id" />
+        <PropertyRef Name="AccountId" />
       </Dependent>
     </ReferentialConstraint>
   </Association>

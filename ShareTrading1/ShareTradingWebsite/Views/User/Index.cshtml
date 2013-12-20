@@ -1,0 +1,77 @@
+@model IEnumerable<Entities.User>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            UserName
+        </th>
+        <th>
+            Password
+        </th>
+        <th>
+            SpecialQuestion
+        </th>
+        <th>
+            Answer
+        </th>
+        <th>
+            Points
+        </th>
+        <th>
+            PersonalDetail
+        </th>
+        <th>
+            Portfolios
+        </th>
+        <th>
+            TransactionHistories
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+        <td>
+			@item.UserName
+        </td>
+        <td>
+			@item.Password
+        </td>
+        <td>
+			@item.SpecialQuestion
+        </td>
+        <td>
+			@item.Answer
+        </td>
+        <td>
+			@item.Points
+        </td>
+        <td>
+			@(item.PersonalDetail == null ? "None" : item.PersonalDetail.Name)
+        </td>
+        <td>
+			@(item.Portfolios == null ? "None" : item.Portfolios.Count.ToString())
+        </td>
+        <td>
+			@(item.TransactionHistories == null ? "None" : item.TransactionHistories.Count.ToString())
+        </td>
+    </tr>
+}
+
+</table>
+
+

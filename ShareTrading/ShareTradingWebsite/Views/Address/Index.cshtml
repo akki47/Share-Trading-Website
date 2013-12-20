@@ -1,0 +1,65 @@
+@model IEnumerable<ShareTradingModel.Address>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            HouseNumber
+        </th>
+        <th>
+            StreetNumber
+        </th>
+        <th>
+            City
+        </th>
+        <th>
+            Country
+        </th>
+        <th>
+            Fax
+        </th>
+        <th>
+            PhoneNumber
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+        <td>
+			@item.HouseNumber
+        </td>
+        <td>
+			@item.StreetNumber
+        </td>
+        <td>
+			@item.City
+        </td>
+        <td>
+			@item.Country
+        </td>
+        <td>
+			@item.Fax
+        </td>
+        <td>
+			@item.PhoneNumber
+        </td>
+    </tr>
+}
+
+</table>
+
+

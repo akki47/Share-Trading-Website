@@ -3,22 +3,26 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
-using Entities;
+using System.Web.Security;
+//using Entities;
+using ShareTradingModel;
+using ShareTradingWebsite.Filters;
 using ShareTradingWebsite.Models;
+using WebMatrix.WebData;
 
 namespace ShareTradingWebsite.Controllers
 {   
-    public class PersonalDetailsController : Controller
+    [Authorize]
+    [InitializeSimpleMembership]
+    public class PersonalDetailsController : BaseController
     {
+		private readonly IAddressRepository addressRepository;
 		private readonly IPersonalDetailRepository personaldetailRepository;
+        private readonly IUserRepository userRepository;
 
-		// If you are using Dependency Injection, you can delete the following constructor
-        public PersonalDetailsController() : this(new PersonalDetailRepository())
+        public PersonalDetailsController(IAddressRepository addressRepository, IPersonalDetailRepository personaldetailRepository)
         {
-        }
-
-        public PersonalDetailsController(IPersonalDetailRepository personaldetailRepository)
-        {
+			this.addressRepository = addressRepository;
 			this.personaldetailRepository = personaldetailRepository;
         }
 
@@ -27,15 +31,24 @@ namespace ShareTradingWebsite.Controllers
 
         public ViewResult Index()
         {
-            return View(personaldetailRepository.AllIncluding(personaldetail => personaldetail.Companies, personaldetail => personaldetail.Users));
+            return View(personaldetailRepository.AllIncluding(personaldetail => personaldetail.Address1, personaldetail => personaldetail.Address2, personaldetail => personaldetail.Companies, personaldetail => personaldetail.Users));
         }
 
         //
         // GET: /PersonalDetails/Details/5
 
-        public ViewResult Details(long id)
+        public ActionResult Details()//long id)
         {
-            return View(personaldetailRepository.Find(id));
+            PersonalDetail personalDetails = personaldetailRepository.Find(WebSecurity.GetUserId(User.Identity.Name));
+
+            if (personalDetails == null)
+            {
+                return RedirectToAction("Create", "PersonalDetails");
+            }
+            else
+            {
+                return View(personalDetails);
+            }
         }
 
         //
@@ -43,6 +56,8 @@ namespace ShareTradingWebsite.Controllers
 
         public ActionResult Create()
         {
+			ViewBag.PossibleAddress1 = addressRepository.All;
+			ViewBag.PossibleAddress2 = addressRepository.All;
             return View();
         } 
 
@@ -57,6 +72,8 @@ namespace ShareTradingWebsite.Controllers
                 personaldetailRepository.Save();
                 return RedirectToAction("Index");
             } else {
+				ViewBag.PossibleAddress1 = addressRepository.All;
+				ViewBag.PossibleAddress2 = addressRepository.All;
 				return View();
 			}
         }
@@ -66,6 +83,8 @@ namespace ShareTradingWebsite.Controllers
  
         public ActionResult Edit(long id)
         {
+			ViewBag.PossibleAddress1 = addressRepository.All;
+			ViewBag.PossibleAddress2 = addressRepository.All;
              return View(personaldetailRepository.Find(id));
         }
 
@@ -78,8 +97,10 @@ namespace ShareTradingWebsite.Controllers
             if (ModelState.IsValid) {
                 personaldetailRepository.InsertOrUpdate(personaldetail);
                 personaldetailRepository.Save();
-                return RedirectToAction("Index");
+                return RedirectToAction("Details");
             } else {
+				ViewBag.PossibleAddress1 = addressRepository.All;
+				ViewBag.PossibleAddress2 = addressRepository.All;
 				return View();
 			}
         }
@@ -107,6 +128,7 @@ namespace ShareTradingWebsite.Controllers
         protected override void Dispose(bool disposing)
         {
             if (disposing) {
+                addressRepository.Dispose();
                 personaldetailRepository.Dispose();
             }
             base.Dispose(disposing);

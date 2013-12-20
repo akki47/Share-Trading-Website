@@ -2,26 +2,13 @@
 <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
   <EntityContainerMapping StorageEntityContainer="ShareTradingModelStoreContainer" CdmEntityContainer="ShareTradingEntities">
     <EntitySetMapping Name="Accounts">
-      <EntityTypeMapping TypeName="IsTypeOf(ShareTradingModel.Account)">
+      <EntityTypeMapping TypeName="ShareTradingModel.Account">
         <MappingFragment StoreEntitySet="Accounts">
           <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="Answer" ColumnName="Answer" />
-          <ScalarProperty Name="SpecialQuestion" ColumnName="SpecialQuestion" />
-          <ScalarProperty Name="Password" ColumnName="Password" />
           <ScalarProperty Name="UserName" ColumnName="UserName" />
-        </MappingFragment>
-      </EntityTypeMapping>
-      <EntityTypeMapping TypeName="IsTypeOf(ShareTradingModel.User)">
-        <MappingFragment StoreEntitySet="User">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="PersonalDetailId" ColumnName="PersonalDetailId" />
-          <ScalarProperty Name="Points" ColumnName="Points" />
-        </MappingFragment>
-      </EntityTypeMapping>
-      <EntityTypeMapping TypeName="IsTypeOf(ShareTradingModel.Company)">
-        <MappingFragment StoreEntitySet="Company">
-          <ScalarProperty Name="Id" ColumnName="Id" />
-          <ScalarProperty Name="PersonalDetailId" ColumnName="PersonalDetailId" />
+          <ScalarProperty Name="SpecialQuestion" ColumnName="SpecialQuestion" />
+          <ScalarProperty Name="Answer" ColumnName="Answer" />
+          <ScalarProperty Name="Role" ColumnName="Role" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -38,13 +25,22 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Companies">
+      <EntityTypeMapping TypeName="ShareTradingModel.Company">
+        <MappingFragment StoreEntitySet="Company">
+          <ScalarProperty Name="PersonalDetailId" ColumnName="PersonalDetailId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="PersonalDetails">
       <EntityTypeMapping TypeName="ShareTradingModel.PersonalDetail">
         <MappingFragment StoreEntitySet="PersonalDetails">
           <ScalarProperty Name="Id" ColumnName="Id" />
           <ScalarProperty Name="Name" ColumnName="Name" />
-          <ScalarProperty Name="Address1ID" ColumnName="Address1" />
-          <ScalarProperty Name="Address2ID" ColumnName="Address2" />
+          <ScalarProperty Name="Address1Id" ColumnName="Address1" />
+          <ScalarProperty Name="Address2Id" ColumnName="Address2" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
@@ -82,6 +78,16 @@
           <ScalarProperty Name="NumberOfShares" ColumnName="NumberOfShares" />
           <ScalarProperty Name="PricePerShare" ColumnName="PricePerShare" />
           <ScalarProperty Name="ProfitPerShare" ColumnName="ProfitPerShare" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ShareTradingModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="Points" ColumnName="Points" />
+          <ScalarProperty Name="PersonalDetailId" ColumnName="PersonalDetailId" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="AccountId" ColumnName="AccountId" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

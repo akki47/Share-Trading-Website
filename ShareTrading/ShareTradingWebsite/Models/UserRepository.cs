@@ -5,7 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Linq.Expressions;
 using System.Web;
-using Entities;
+//using Entities;
 using ShareTradingModel;
 
 namespace ShareTradingWebsite.Models
@@ -16,12 +16,12 @@ namespace ShareTradingWebsite.Models
 
         public IQueryable<User> All
         {
-            get { return context.Accounts.OfType<User>(); }
+            get { return context.Users; }
         }
 
         public IQueryable<User> AllIncluding(params Expression<Func<User, object>>[] includeProperties)
         {
-            IQueryable<User> query = context.Accounts.OfType<User>();
+            IQueryable<User> query = context.Users;
             foreach (var includeProperty in includeProperties) {
                 query = query.Include(includeProperty);
             }
@@ -30,14 +30,14 @@ namespace ShareTradingWebsite.Models
 
         public User Find(long id)
         {
-            return context.Set<User>().Find(id);
+            return context.Users.Find(id);
         }
 
         public void InsertOrUpdate(User user)
         {
             if (user.Id == default(long)) {
                 // New entity
-                context.Set<User>().Add(user);
+                context.Users.Add(user);
             } else {
                 // Existing entity
                 context.Entry(user).State = EntityState.Modified;
@@ -46,8 +46,8 @@ namespace ShareTradingWebsite.Models
 
         public void Delete(long id)
         {
-            var user = context.Set<User>().Find(id);
-            context.Set<User>().Remove(user);
+            var user = context.Users.Find(id);
+            context.Users.Remove(user);
         }
 
         public void Save()

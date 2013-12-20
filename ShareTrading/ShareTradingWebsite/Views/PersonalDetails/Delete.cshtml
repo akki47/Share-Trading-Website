@@ -1,4 +1,4 @@
-@model Entities.PersonalDetail
+@model ShareTradingModel.PersonalDetail
 
 @{
     ViewBag.Title = "Delete";
@@ -14,16 +14,10 @@
     <div class="display-field">@Model.Name</div>
 
     <div class="display-label">Address1</div>
-    <div class="display-field">@Model.Address1</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.Address1).ToString()</div>
 
     <div class="display-label">Address2</div>
-    <div class="display-field">@Model.Address2</div>
-
-    <div class="display-label">Address</div>
-    <div class="display-field">@Html.DisplayTextFor(_ => Model.Address).ToString()</div>
-
-    <div class="display-label">Address3</div>
-    <div class="display-field">@Html.DisplayTextFor(_ => Model.Address3).ToString()</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.Address2).ToString()</div>
 
     <div class="display-label">Companies</div>
     <div class="display-field">@(Model.Companies == null ? "None" : Model.Companies.Count.ToString())</div>

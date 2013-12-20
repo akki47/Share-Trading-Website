@@ -6,3 +6,13 @@ C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\Entities\bin
 C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\Entities\bin\Debug\Entities.pdb
 C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\Entities\obj\Debug\Entities.dll
 C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\Entities\obj\Debug\Entities.pdb
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\Entities\bin\Debug\Entities.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\Entities\bin\Debug\Entities.pdb
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\Entities\obj\Debug\Entities.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\Entities\obj\Debug\Entities.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Entities\bin\Debug\Entities.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Entities\bin\Debug\Entities.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Entities\obj\Debug\Entities.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Entities\obj\Debug\Entities.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\Entities\obj\Debug\Entities.csprojResolveAssemblyReference.cache

@@ -1,0 +1,65 @@
+@model IEnumerable<ShareTradingModel.Share>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table>
+    <tr>
+        <th></th>
+        <th>
+            Name
+        </th>
+        <th>
+            StockExchangeId
+        </th>
+        <th>
+            FaceValue
+        </th>
+        <th>
+            QuantityInitial
+        </th>
+        <th>
+            QuantityRemaining
+        </th>
+        <th>
+            Company
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Id }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Id }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+        </td>
+        <td>
+			@item.Name
+        </td>
+        <td>
+			@item.StockExchangeId
+        </td>
+        <td>
+			@String.Format("{0:F}", item.FaceValue)
+        </td>
+        <td>
+			@item.QuantityInitial
+        </td>
+        <td>
+			@item.QuantityRemaining
+        </td>
+        <td>
+			@Html.DisplayTextFor(_ => item.Company).ToString()
+        </td>
+    </tr>
+}
+
+</table>
+
+

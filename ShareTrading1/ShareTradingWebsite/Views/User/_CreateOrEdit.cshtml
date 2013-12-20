@@ -1,0 +1,55 @@
+@model Entities.User
+
+@* This partial view defines form fields that will appear when creating and editing entities *@
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.UserName)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.UserName)
+    @Html.ValidationMessageFor(model => model.UserName)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Password)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Password)
+    @Html.ValidationMessageFor(model => model.Password)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.SpecialQuestion)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.SpecialQuestion)
+    @Html.ValidationMessageFor(model => model.SpecialQuestion)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Answer)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Answer)
+    @Html.ValidationMessageFor(model => model.Answer)
+</div>
+
+<div class="editor-label">
+    @Html.LabelFor(model => model.Points)
+</div>
+<div class="editor-field">
+    @Html.EditorFor(model => model.Points)
+    @Html.ValidationMessageFor(model => model.Points)
+</div>
+
+<div class="editor-label">
+    PersonalDetail
+</div>
+<div class="editor-field">
+    @Html.DropDownListFor(model => model.PersonalDetailId, ((IEnumerable<Entities.PersonalDetail>)ViewBag.PossiblePersonalDetails).Select(option => new SelectListItem {
+        Text = (option == null ? "None" : option.Name), 
+        Value = option.Id.ToString(),
+        Selected = (Model != null) && (option.Id == Model.PersonalDetailId)
+    }), "Choose...")
+    @Html.ValidationMessageFor(model => model.PersonalDetailId)
+</div>

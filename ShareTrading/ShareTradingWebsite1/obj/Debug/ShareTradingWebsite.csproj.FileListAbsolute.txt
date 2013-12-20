@@ -1,0 +1,106 @@
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\obj\Debug\ShareTradingWebsite.csprojResolveAssemblyReference.cache
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\ShareTradingWebsite.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\ShareTradingWebsite.pdb
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\Antlr3.Runtime.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\Entities.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\Newtonsoft.Json.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\ShareTradingModel.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Net.Http.Formatting.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.Http.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.Http.WebHost.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.Mvc.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.Optimization.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.Providers.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.Razor.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.Deployment.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.Razor.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\WebGrease.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\Entities.pdb
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\ShareTradingModel.pdb
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\Newtonsoft.Json.xml
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Net.Http.Formatting.xml
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.Http.xml
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.Http.WebHost.xml
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.Mvc.xml
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.Razor.xml
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.xml
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.Deployment.xml
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.Razor.xml
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\obj\Debug\ShareTradingWebsite.dll
+C:\Users\nagarro\Documents\Visual Studio 2012\Projects\ShareTrading\ShareTradingWebsite\obj\Debug\ShareTradingWebsite.pdb
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\ShareTradingWebsite.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\ShareTradingWebsite.pdb
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Antlr3.Runtime.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Entities.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Microsoft.Web.Infrastructure.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Newtonsoft.Json.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\ShareTradingModel.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Net.Http.Formatting.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Http.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Http.WebHost.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Mvc.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Optimization.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Providers.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Razor.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.Deployment.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.Razor.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\WebGrease.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Entities.pdb
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\ShareTradingModel.pdb
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Newtonsoft.Json.xml
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Net.Http.Formatting.xml
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Http.xml
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Http.WebHost.xml
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Mvc.xml
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Razor.xml
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.xml
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.Deployment.xml
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.Razor.xml
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\obj\Debug\ShareTradingWebsite.csprojResolveAssemblyReference.cache
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\obj\Debug\ShareTradingWebsite.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\obj\Debug\ShareTradingWebsite.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\ShareTradingWebsite.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\ShareTradingWebsite.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Antlr3.Runtime.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Entities.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Newtonsoft.Json.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\ShareTradingModel.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Net.Http.Formatting.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Http.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Http.WebHost.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Mvc.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Optimization.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Providers.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Razor.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.Deployment.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.Razor.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\WebGrease.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Entities.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\ShareTradingModel.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Newtonsoft.Json.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Net.Http.Formatting.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Http.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Http.WebHost.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Mvc.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.Razor.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.Deployment.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\System.Web.WebPages.Razor.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\obj\Debug\ShareTradingWebsite.csprojResolveAssemblyReference.cache
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\obj\Debug\ShareTradingWebsite.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\obj\Debug\ShareTradingWebsite.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Ninject.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Ninject.Web.Common.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Ninject.Web.Mvc.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\WebActivator.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Ninject.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Ninject.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Ninject.Web.Common.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Ninject.Web.Common.xml
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Ninject.Web.Mvc.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\ShareTradingWebsite\bin\Ninject.Web.Mvc.xml

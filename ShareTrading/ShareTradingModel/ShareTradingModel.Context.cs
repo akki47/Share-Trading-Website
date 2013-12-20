@@ -12,7 +12,6 @@ namespace ShareTradingModel
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-    using Entities;
     
     public partial class ShareTradingEntities : DbContext
     {
@@ -28,9 +27,11 @@ namespace ShareTradingModel
     
         public DbSet<Account> Accounts { get; set; }
         public DbSet<Address> Addresses { get; set; }
+        public DbSet<Company> Companies { get; set; }
         public DbSet<PersonalDetail> PersonalDetails { get; set; }
         public DbSet<Portfolio> Portfolios { get; set; }
         public DbSet<Share> Shares { get; set; }
         public DbSet<TransactionHistory> TransactionHistories { get; set; }
+        public DbSet<User> Users { get; set; }
     }
 }

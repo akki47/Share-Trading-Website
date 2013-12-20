@@ -1,0 +1,38 @@
+@model Entities.PersonalDetail
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>PersonalDetail</legend>
+
+    <div class="display-label">Name</div>
+    <div class="display-field">@Model.Name</div>
+
+    <div class="display-label">Address1</div>
+    <div class="display-field">@Model.Address1</div>
+
+    <div class="display-label">Address2</div>
+    <div class="display-field">@Model.Address2</div>
+
+    <div class="display-label">Address</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.Address).ToString()</div>
+
+    <div class="display-label">Address3</div>
+    <div class="display-field">@Html.DisplayTextFor(_ => Model.Address3).ToString()</div>
+
+    <div class="display-label">Companies</div>
+    <div class="display-field">@(Model.Companies == null ? "None" : Model.Companies.Count.ToString())</div>
+
+    <div class="display-label">Users</div>
+    <div class="display-field">@(Model.Users == null ? "None" : Model.Users.Count.ToString())</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+

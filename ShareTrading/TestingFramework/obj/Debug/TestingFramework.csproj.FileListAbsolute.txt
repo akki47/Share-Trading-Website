@@ -1,0 +1,10 @@
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\TestingFramework\bin\Debug\TestingFramework.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\TestingFramework\bin\Debug\TestingFramework.pdb
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\TestingFramework\obj\Debug\TestingFramework.csprojResolveAssemblyReference.cache
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\TestingFramework\obj\Debug\TestingFramework.dll
+F:\Atique\CTT(2013)\Practice\ctt_cttmaintrunck\ShareTrading\TestingFramework\obj\Debug\TestingFramework.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\TestingFramework\bin\Debug\TestingFramework.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\TestingFramework\bin\Debug\TestingFramework.pdb
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\TestingFramework\obj\Debug\TestingFramework.csprojResolveAssemblyReference.cache
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\TestingFramework\obj\Debug\TestingFramework.dll
+C:\Users\ankush2011.NAGARRO\Desktop\ctt_cttmaintrunck\ShareTrading\TestingFramework\obj\Debug\TestingFramework.pdb

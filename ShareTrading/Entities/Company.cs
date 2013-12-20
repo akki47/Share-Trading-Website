@@ -7,20 +7,24 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace Entities
+namespace ShareTradingModel
 {
     using System;
     using System.Collections.Generic;
     
-    public partial class Company : Account
+    public partial class Company
     {
         public Company()
         {
             this.Shares = new HashSet<Share>();
         }
-    
+
+        //It should be auto generated
+        public long Id { get; set; }
         public long PersonalDetailId { get; set; }
-    
+        public long AccountId { get; set; }
+
+        public virtual Account Account { get; set; }
         public virtual PersonalDetail PersonalDetail { get; set; }
         public virtual ICollection<Share> Shares { get; set; }
     }

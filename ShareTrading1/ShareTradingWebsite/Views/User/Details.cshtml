@@ -1,0 +1,41 @@
+@model Entities.User
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>User</legend>
+
+    <div class="display-label">UserName</div>
+    <div class="display-field">@Model.UserName</div>
+
+    <div class="display-label">Password</div>
+    <div class="display-field">@Model.Password</div>
+
+    <div class="display-label">SpecialQuestion</div>
+    <div class="display-field">@Model.SpecialQuestion</div>
+
+    <div class="display-label">Answer</div>
+    <div class="display-field">@Model.Answer</div>
+
+    <div class="display-label">Points</div>
+    <div class="display-field">@Model.Points</div>
+
+    <div class="display-label">PersonalDetail</div>
+    <div class="display-field">@(Model.PersonalDetail == null ? "None" : Model.PersonalDetail.Name)</div>
+
+    <div class="display-label">Portfolios</div>
+    <div class="display-field">@(Model.Portfolios == null ? "None" : Model.Portfolios.Count.ToString())</div>
+
+    <div class="display-label">TransactionHistories</div>
+    <div class="display-field">@(Model.TransactionHistories == null ? "None" : Model.TransactionHistories.Count.ToString())</div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+
+
